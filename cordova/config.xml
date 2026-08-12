@@ -1,15 +1,40 @@
 <?xml version='1.0' encoding='utf-8'?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shadowlegends.game" android:versionCode="1" android:versionName="1.0.0">
-    <supports-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <application android:hardwareAccelerated="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:supportsRtl="true">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode|orientation" android:label="@string/activity_name" android:launchMode="singleTop" android:name="MainActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
-            <intent-filter android:label="@string/launcher_name">
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="32" />
-</manifest>
+<widget id="com.shadowlegends.game" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Shadow Legends</name>
+    <description>Enter the arena. Fight enemies, build defenses and become the last legend standing.</description>
+    <author email="dev@shadowlegends.com" href="https://github.com/mariamowoyele10">Shadow Legends</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="Orientation" value="landscape" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="target-device" value="universal" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="32" />
+    <preference name="android-build-tool" value="32.0.0" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="SuppressesLongPressGesture" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="www/img/icon-36-ldpi.png" />
+        <icon density="mdpi" src="www/img/icon-48-mdpi.png" />
+        <icon density="hdpi" src="www/img/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="www/img/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="www/img/icon-144-xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/img/icon-192-xxxhdpi.png" />
+        <splash density="port-ldpi" src="www/img/splash-320-426-ldpi.png" />
+        <splash density="port-mdpi" src="www/img/splash-320-470-mdpi.png" />
+        <splash density="port-hdpi" src="www/img/splash-480-640-hdpi.png" />
+        <splash density="port-xhdpi" src="www/img/splash-720-960-xhdpi.png" />
+        <splash density="port-xxhdpi" src="www/img/splash-1080-1440-xxhdpi.png" />
+    </platform>
+</widget>
